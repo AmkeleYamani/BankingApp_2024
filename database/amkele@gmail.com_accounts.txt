@@ -1,5 +1,4 @@
-Birthday Savings ,50.0
-Inter,34.0
 Savings,0.0
-Asange,9000.0
-Birthday,4000.0
+Birthday,500.0
+future savings,5000.0
+Emkay,600.0

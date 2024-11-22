@@ -201,33 +201,33 @@ h3 {
         <!-- Accounts Section -->
         <h3 class="mt-5">Your Accounts</h3>
         <a href="/create_account" class="btn btn-success mb-3">Create New Account</a>
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th>Account Name</th>
-                    <th>Balance</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for account in accounts %}
-                <tr>
-                    <td>
-                        {{ account.name }}
-                        {% if "Savings" in account.name %}
-                        <span class="badge bg-success">Savings</span>
-                        {% elif "Investment" in account.name %}
-                        <span class="badge bg-primary">Investment</span>
-                        {% endif %}
-                    </td>
-                    <td>ZAR {{ account.balance }}</td>
-                </tr>
-                {% else %}
-                <tr>
-                    <td colspan="2" class="text-center">No accounts found. Create one now!</td>
-                </tr>
-                {% endfor %}
-            </tbody>
-        </table>
+{#        <table class="table table-striped">#}
+{#            <thead>#}
+{#                <tr>#}
+{#                    <th>Account Name</th>#}
+{#                    <th>Balance</th>#}
+{#                </tr>#}
+{#            </thead>#}
+{#            <tbody>#}
+{#                {% for account in accounts %}#}
+{#                <tr>#}
+{#                    <td>#}
+{#                        {{ account.name }}#}
+{#                        {% if "Savings" in account.name %}#}
+{#                        <span class="badge bg-success">Savings</span>#}
+{#                        {% elif "Investment" in account.name %}#}
+{#                        <span class="badge bg-primary">Investment</span>#}
+{#                        {% endif %}#}
+{#                    </td>#}
+{#                    <td>ZAR {{ account.balance }}</td>#}
+{#                </tr>#}
+{#                {% else %}#}
+{#                <tr>#}
+{#                    <td colspan="2" class="text-center">No accounts found. Create one now!</td>#}
+{#                </tr>#}
+{#                {% endfor %}#}
+{#            </tbody>#}
+{#        </table>#}
     </div>
 
     <!-- Footer -->
